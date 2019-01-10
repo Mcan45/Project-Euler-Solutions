@@ -15,7 +15,7 @@ def multiples(a, b, x):
     sum = 0  # sum of multiples
 
     for i in range(1, x):
-        # check i if multiple of a and b
+        # check i if multiple of a or b
         if i % a == 0 or i % b == 0:
             sum += i
 
