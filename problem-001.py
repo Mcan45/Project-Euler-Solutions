@@ -22,4 +22,4 @@ def multiples(a, b, x):
     return sum
 
 
-print(multiples(3, 5, 1000))
+print(multiples(3, 5, 10))
