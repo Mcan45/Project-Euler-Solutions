@@ -30,4 +30,4 @@ def sum_of_even_fibo(n):
     return sum_even
 
 
-print(fibo(4*10**6))
+print(sum_of_even_fibo(4*10**6))
