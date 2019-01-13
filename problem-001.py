@@ -7,19 +7,29 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 
-def multiples(a, b, x):
+def multiples(x):
     """
-    multiples of a and b
-    below x
+    multiples of 3 and 5 below x
     """
-    sum = 0  # sum of multiples
+    #number of  multiples of 3
+    k3=(x-1)//3
+    
+    # number of multiples of 5
+    k5=(x-1)//5
+    
+    # number of multiples of 15
+    k15=(x-1)//15
+    
+    #sum of 3's multiples included 15's 
+    a=3*k3*(k3+1)//2
+    
+    #sum of 5's multiples included 15's
+    b=5*k5*(k5+1)//2
+    
+    #sum of 15's multiples
+    c=15*k15*(k15+1)//2
+    
+    return a+b-c
 
-    for i in range(1, x):
-        # check i if multiple of a or b
-        if i % a == 0 or i % b == 0:
-            sum += i
 
-    return sum
-
-
-print(multiples(3, 5, 10))
+print(multiples(1000))
